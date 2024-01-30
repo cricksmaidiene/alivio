@@ -10,6 +10,15 @@
 ![](https://img.shields.io/badge/Google%20Colab-F9AB00.svg?style=for-the-badge&logo=Google-Colab&logoColor=white)
 
 
+- [Alivio 🛖](#alivio-)
+  - [Setup](#setup)
+    - [Prerequisites](#prerequisites)
+      - [Software](#software)
+      - [Access Keys](#access-keys)
+    - [Environment Setup](#environment-setup)
+    - [Download \& Installation](#download--installation)
+  - [Directory Structure](#directory-structure)
+
 ## Setup
 
 ### Prerequisites
