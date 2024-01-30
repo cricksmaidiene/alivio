@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "alivio"
+version = "0.1.0"
+description = "Building classification for natural disaster relief efforts"
+authors = [
+    "Eshwaran Venkat <eshwaranv98@berkeley.edu>",
+    "Samuel Ha <>",
+    "Sarah Thomas <>",
+    "Yamini Gotimunkul <>",
+    "Paris Li <>"
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.0"
+loguru = "^0.7.2"
+pycountry = "^23.12.11"
+requests = "^2.31.0"
+shapely = "^2.0.2"
+fiona = "^1.9.5"
+pyproj = "^3.6.1"
+rtree = "^1.2.0"
+geopy = "^2.4.1"
+geopandas = "^0.14.2"
+joblib = "^1.3.2"
+pyarrow = "^15.0.0"
+h3 = "^3.7.6"
+awscli = "^1.32.30"
+boto3 = "^1.34.30"
+black = "^24.1.1"
+ruff = "^0.1.15"
+tqdm = "^4.66.1"
+networkx = "^3.2.1"
+transformers = "^4.37.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
