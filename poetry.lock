@@ -881,6 +881,20 @@ files = [
 certifi = "*"
 
 [[package]]
+name = "pyprojroot"
+version = "0.3.0"
+description = "Project-oriented workflow in Python"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "pyprojroot-0.3.0-py3-none-any.whl", hash = "sha256:c426b51b17ab4f4d4f95b479cf5b6c22df59bb58fbd4f01b37a6977d29b99888"},
+    {file = "pyprojroot-0.3.0.tar.gz", hash = "sha256:109705bb790968704958efcfc5ccce85d8e3dafa054897cc81371fcbbf56cb10"},
+]
+
+[package.dependencies]
+typing-extensions = "*"
+
+[[package]]
 name = "python-dateutil"
 version = "2.8.2"
 description = "Extensions to the standard Python datetime module"
@@ -1662,4 +1676,4 @@ dev = ["black (>=19.3b0)", "pytest (>=4.6.2)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "1b7670ad43dfb079be7051d51cae614b6d7130c1f052050d03a291e68b833ae0"
+content-hash = "accee95262dd2ba606db966685d80680b2436217ccaa7f5d5135db9a30bd1220"

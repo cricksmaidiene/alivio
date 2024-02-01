@@ -33,7 +33,7 @@ ruff = "^0.1.15"
 tqdm = "^4.66.1"
 networkx = "^3.2.1"
 transformers = "^4.37.2"
-
+pyprojroot = "^0.3.0"
 
 [build-system]
 requires = ["poetry-core"]
