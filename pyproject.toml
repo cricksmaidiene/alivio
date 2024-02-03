@@ -34,6 +34,7 @@ tqdm = "^4.66.1"
 networkx = "^3.2.1"
 transformers = "^4.37.2"
 pyprojroot = "^0.3.0"
+folium = "^0.15.1"
 
 [build-system]
 requires = ["poetry-core"]
