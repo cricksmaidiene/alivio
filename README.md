@@ -57,6 +57,13 @@ The following commands need to be run only once, during the initial setup proces
     conda activate alivio
     ```
 
+  - Create a Jupyter Notebook Kernel
+
+    ```bash
+    conda install -c anaconda ipykernel -y
+    python -m ipykernel install --user --name=alivio
+    ```
+
 - Install poetry for python dependency management
 
   ```bash
@@ -91,7 +98,7 @@ The following commands need to be run only once, during the initial setup proces
   cd alivio
   ```
 
-- Install the python dependencies
+- Install the python dependencies (make sure the `alivio` conda environment is active)
 
   ```bash
   poetry install --no-root
