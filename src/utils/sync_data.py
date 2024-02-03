@@ -25,10 +25,10 @@ def download_openai_caribbean_dataset():
     BASE_DIR: str = f"{DATA_DIR}/openai_caribbean/submission_github_data"
     os.makedirs(BASE_DIR, exist_ok=True)
 
-    with open(BASE_DIR + "/train.json", "w") as f:
+    with open(BASE_DIR + "/train.geojson", "w") as f:
         json.dump(train_response, f, indent=4)
 
-    with open(BASE_DIR + "/test.json", "w") as f:
+    with open(BASE_DIR + "/test.geojson", "w") as f:
         json.dump(test_response, f, indent=4)
 
     logger.info(f"OpenAI Caribbean Challenge Dataset saved to {BASE_DIR}")
