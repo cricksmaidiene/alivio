@@ -35,6 +35,7 @@ networkx = "^3.2.1"
 transformers = "^4.37.2"
 pyprojroot = "^0.3.0"
 folium = "^0.15.1"
+smart-open = "^6.4.0"
 
 [build-system]
 requires = ["poetry-core"]
