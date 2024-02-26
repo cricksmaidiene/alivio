@@ -112,9 +112,18 @@ You can now start executing notebooks and code within this virtual environment.
 
 This utility downloads relevant dataset used by the project into the `/data` directory
 
+Additionally install the below package
+
+```bash
+pip install chardet
+```
+
+Run the below command
 ```bash
 python src/utils/sync_data.py
 ```
+
+
 
 ## Directory Structure
 

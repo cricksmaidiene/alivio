@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 """A module to download data repositories to the local folder"""
 
 import json
