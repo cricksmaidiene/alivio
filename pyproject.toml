@@ -6,7 +6,7 @@ authors = [
     "Eshwaran Venkat <eshwaranv98@berkeley.edu>",
     "Samuel Ha <>",
     "Sarah Thomas <>",
-    "Yamini Gotimunkul <>",
+    "Yamini Gotimunkul <yamini.gotimukul@berkeley.edu>",
     "Paris Li <>"
 ]
 readme = "README.md"
@@ -50,6 +50,13 @@ dataclasses-json = "^0.6.4"
 supervision = "^0.18.0"
 seaborn = "^0.13.2"
 inflection = "^0.5.1"
+albumentations  =  "^1.4.0"
+torch = "^2.2.2"
+torcheval = "^0.0.7"
+imblearn = "^0.0"
+optuna = "^3.6.0"
+torchsummary = "^1.5.1"
+torchvision = "^0.17.2"
 
 [build-system]
 requires = ["poetry-core"]
