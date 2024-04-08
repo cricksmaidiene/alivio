@@ -57,6 +57,7 @@ imblearn = "^0.0"
 optuna = "^3.6.0"
 torchsummary = "^1.5.1"
 torchvision = "^0.17.2"
+streamlit = "^1.33.0"
 
 [build-system]
 requires = ["poetry-core"]
