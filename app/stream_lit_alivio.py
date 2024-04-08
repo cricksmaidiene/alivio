@@ -50,7 +50,7 @@ def display_map(map_area):
         view_state = pdk.ViewState(latitude=lat , longitude=long, zoom=zoom_level)
         df = pd.read_csv("michael_polygons.csv")
         df = parse_and_create_new_column(df, 'wkt_lt_lg', 'parsed_polygon')
-        df['color'] = lambda row: get_color(row['damage_level'])
+        df["color"] = df["damage_level"].apply(get_color)
 
        
         polygon_layer = pdk.Layer(
@@ -60,7 +60,7 @@ def display_map(map_area):
             get_polygon="parsed_polygon",
             filled=True,
             extruded=False,
-            get_fill_color="color",
+            get_fill_color= "color",
             get_line_color=[255, 255, 255],
             auto_highlight=True,
             pickable=True,
@@ -96,14 +96,14 @@ def parse_and_create_new_column(df, original_column_name, new_column_name):
     return df
 
 def get_color(damage_category):
-    if damage_category == "destroyed":
+    if str(damage_category) == "destroyed":
         return [255, 0, 0]  # Red color for severe damage
-    elif damage_category == "major-damage":
+    elif str(damage_category) == "major-damage":
         return [255, 255, 0]  # Yellow color for major damage
-    elif damage_category == "minor-damage":
+    elif str(damage_category) == "minor-damage":
         return [0, 0, 255]  # Blue color for minor damage
-    elif damage_category == "no-damage":
-        return [0, 255, 0]  # Gree color for no damage
+    elif str(damage_category) == "no-damage":
+        return [0, 255, 0]  # Green color for no damage
     else:
         return [128, 128, 128]  # Gray color for unknown category
 
