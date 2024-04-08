@@ -77,7 +77,9 @@ def display_map(map_area):
 
     # add h3 layer
     if h3_layer != "None":
-        map_layers.append(render_h3_layer(h3_layer))
+        lyr, tool = render_h3_layer(h3_layer)
+        map_layers.append(lyr)
+        tool_tip = tool
 
     #render map
     r = pdk.Deck(layers=map_layers, initial_view_state=view_state,tooltip=tool_tip)
@@ -122,10 +124,11 @@ def render_h3_layer(layer):
             extruded=False,
             get_hexagon="h3_cell_6",
             get_fill_color="[255-gdp_per_capita, 255, gdp_per_capita]",
-            opacity = 0.5,
+            opacity = 0.3,
             get_line_color=[255, 255, 255],
             line_width_min_pixels=2,
             )
+        tool_tip = {"text": "Population: {sum_population}\nGDP Per Capita: {gdp_per_capita}"}
     elif layer == "7":
         pdk_layer = pdk.Layer(
             "H3HexagonLayer",
@@ -134,13 +137,15 @@ def render_h3_layer(layer):
             stroked=True,
             filled=True,
             extruded=False,
-            get_hexagon="h3_cell_6",
-            get_fill_color="[0, 255, gdp_per_capita]",
+            get_hexagon="h3_cell_7",
+            get_fill_color="[255-gdp_per_capita, 255, gdp_per_capita]",
+            opacity = 0.3,
             get_line_color=[255, 255, 255],
             line_width_min_pixels=2,
             )
+        tool_tip = {"text": "Population: {sum_population}\nGDP Per Capita: {gdp_per_capita}"}
 
-    return pdk_layer
+    return pdk_layer,tool_tip
 
 def main():
     
