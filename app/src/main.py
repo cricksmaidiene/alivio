@@ -12,15 +12,13 @@ from viz_hurricane_data import select_and_display_hurricane
 
 def main():
     # Create tabs
-    tabs: list[str] = ["Alivio", "Upload Disaster Image", "Hurricane Damage (Historical Data)"]
+    tabs: list[str] = ["Home 🏠", "Live Building Damage Prediction 🔮", "Vulnerability Map 🗺"]
     selected_tab = st.sidebar.selectbox("Select a tab", tabs)
 
-    if selected_tab == "Alivio":
+    if selected_tab == "Home 🏠":
         home_page()
-    # elif selected_tab == "Upload Disaster Image":
-    #     st.title("Hurricane Disaster Assessment")
-    #     upload_files()
-    elif selected_tab == "Hurricane Damage (Historical Data)":
+    
+    elif selected_tab == "Vulnerability Map 🗺":
         select_and_display_hurricane()
 
 
